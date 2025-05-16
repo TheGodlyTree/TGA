@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Home Page</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <a href="page1.html" class="btn">Page 1</a>
+    <a href="page2.html" class="btn">Page 2</a>
+    <a href="page3.html" class="btn">Page 3</a>
+  </div>
+</body>
+</html>
